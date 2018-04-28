@@ -13,15 +13,15 @@ public class PlayerController : MonoBehaviour {
 	// Update is called once per frame
 	void FixedUpdate () {
         //Debug.Log(Input.GetAxis("Horizontal"));
-        //transform.position += new Vector3(16* Input.GetAxis("Horizontal"), 8F) * Time.deltaTime;
-        //b.transform.Translate(new Vector3(16 * Input.GetAxis("Horizontal"), 8F) * Time.deltaTime);
-
-		transform.position += new Vector3(0F, 8F) * Time.deltaTime;
+        //transform.position += new Vector3(12 * Input.GetAxisRaw("Horizontal"), 6F) * Time.deltaTime;
+        rb.transform.Translate(new Vector3(12 * Input.GetAxisRaw("Horizontal"), 6F) * Time.deltaTime);
+		/*
+		transform.position += new Vector3(0F, 6F) * Time.deltaTime;
 		if (Input.GetKey (KeyCode.LeftArrow)) {
 			transform.position -= new Vector3(12F, 0F) * Time.deltaTime;
 		} else if (Input.GetKey (KeyCode.RightArrow)) {
 			transform.position += new Vector3(12F, 0F) * Time.deltaTime;
-		}
+		}*/
 
 	}
 }

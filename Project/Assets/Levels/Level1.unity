@@ -206,8 +206,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1f50c5037d0e16943b230954d550809b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   maxPositionShift: 50
   speed: 0.8
 --- !u!1001 &172313100
@@ -528,7 +528,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4576290801442870, guid: d31c208096f984c45906703993f76293, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 
+      value:
       objectReference: {fileID: 0}
     - target: {fileID: 4576290801442870, guid: d31c208096f984c45906703993f76293, type: 2}
       propertyPath: m_LocalPosition.z
@@ -722,7 +722,7 @@ Prefab:
     - target: {fileID: 114228471037576070, guid: 0737c49725a96344d87a38fbcb641882,
         type: 2}
       propertyPath: player
-      value: 
+      value:
       objectReference: {fileID: 1837551317}
     - target: {fileID: 20107898754206330, guid: 0737c49725a96344d87a38fbcb641882,
         type: 2}
@@ -1436,12 +1436,12 @@ Prefab:
     - target: {fileID: 114675451425465694, guid: b3fca033aabd6444f91261be976ed6a7,
         type: 2}
       propertyPath: startPoint
-      value: 
+      value:
       objectReference: {fileID: 2039293993}
     - target: {fileID: 114675451425465694, guid: b3fca033aabd6444f91261be976ed6a7,
         type: 2}
       propertyPath: player
-      value: 
+      value:
       objectReference: {fileID: 1837551317}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b3fca033aabd6444f91261be976ed6a7, type: 2}
@@ -1739,8 +1739,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1f50c5037d0e16943b230954d550809b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   maxPositionShift: 50
   speed: 0.5
 --- !u!1001 &1722119946
@@ -1880,8 +1880,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1f50c5037d0e16943b230954d550809b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   maxPositionShift: 90
   speed: 0.5
 --- !u!4 &1750151530 stripped
@@ -1931,7 +1931,7 @@ Prefab:
     - target: {fileID: 114491689648723474, guid: 96ba322e912c5bf409d78e27f088be79,
         type: 2}
       propertyPath: loopArea
-      value: 
+      value:
       objectReference: {fileID: 510931531}
     - target: {fileID: 58075530951354476, guid: 96ba322e912c5bf409d78e27f088be79,
         type: 2}
@@ -2117,7 +2117,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4632575094083534, guid: 5f989f3a99556424d99f79f4c4feac56, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4632575094083534, guid: 5f989f3a99556424d99f79f4c4feac56, type: 2}
       propertyPath: m_LocalScale.x
@@ -2344,8 +2344,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 1301386320, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   m_IgnoreReversedGraphics: 1
   m_BlockingObjects: 0
   m_BlockingMask:
@@ -2360,8 +2360,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   m_UiScaleMode: 0
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1

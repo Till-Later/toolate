@@ -1,11 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 using UnityEngine;
 
 public class Player : MonoBehaviour {
 
     public LoopArea loopArea;
     public float minDistanceToObstacleForward;
+	public Image image;
 
     private Vector2 collissionCheckVectorA, collissionCheckVectorB;
 
@@ -37,5 +39,20 @@ public class Player : MonoBehaviour {
 		gameObject.transform.position = new Vector3 (0, 0, 0);//proposedPosition;
 
         //gameObject.transform.localPosition = proposedPosition;
+
+        DeadEffect();
+    }
+
+    public void DeadEffect()
+    {
+        print("Deadeffect invoked");
+        image.gameObject.SetActive(true);
+        Invoke("hideDeadEffect", 1);
+    }
+
+    public void hideDeadEffect()
+    {
+        image.gameObject.SetActive(false);
+
     }
 }
