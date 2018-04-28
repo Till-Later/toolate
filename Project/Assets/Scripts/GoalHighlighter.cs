@@ -2,23 +2,23 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Goal : MonoBehaviour {
+public class GoalHighlighter : MonoBehaviour {
     [SerializeField]
     SpriteRenderer sprite;
 
-    void Start () {
+    void Start() {
 
-	}
-	
-	void Update () {
+    }
 
-	}
+    void Update() {
+
+    }
 
     void OnTriggerEnter2D(Collider2D collider) {
+        Debug.Log("Entered");
         Color spriteColor = sprite.color;
-        spriteColor.a = 0.5f;
+        spriteColor.a = 0.1f;
         sprite.color = spriteColor;
-        Debug.Log("Great!");
     }
 
     void OnTriggerExit2D(Collider2D collider) {
