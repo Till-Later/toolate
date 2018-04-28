@@ -16,12 +16,13 @@ public class Player : MonoBehaviour {
     }
 	
 	// Update is called once per frame
-	void Update () {
-		
+	void OnCollisionEnter2D (Collision2D c) {
+        Die();
 	}
 
     public void Die()
     {
+        Debug.Log("Dead");
         float respawnYPos;
         Collider2D[] colliders;
         Vector2 proposedPosition;
