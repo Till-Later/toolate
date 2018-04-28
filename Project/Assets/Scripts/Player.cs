@@ -1,24 +1,27 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using UnityEngine.UI;
 
-public class Player : MonoBehaviour {
+public class Player : MonoBehaviour
+{
 
     public LoopArea loopArea;
     public float minDistanceToObstacleForward;
+    public Image image;
 
     private Vector2 collissionCheckVectorA, collissionCheckVectorB;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start()
+    {
         collissionCheckVectorA = new Vector2(-gameObject.transform.localScale.x / 2, minDistanceToObstacleForward + gameObject.transform.localScale.y / 2);
         collissionCheckVectorB = new Vector2(gameObject.transform.localScale.x / 2, -gameObject.transform.localScale.y / 2);
     }
-	
-	// Update is called once per frame
-	void OnCollisionEnter2D (Collision2D c) {
+
+    // Update is called once per frame
+    void OnCollisionEnter2D(Collision2D c)
+    {
         Die();
-	}
+    }
 
     public void Die()
     {
