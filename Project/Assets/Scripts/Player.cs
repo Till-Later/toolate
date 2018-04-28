@@ -7,6 +7,7 @@ public class Player : MonoBehaviour
     public LoopArea loopArea;
     public float minDistanceToObstacleForward;
     public Image image;
+    public Text text;
 
     private Vector2 collissionCheckVectorA, collissionCheckVectorB;
 
@@ -44,13 +45,12 @@ public class Player : MonoBehaviour
     public void DeadEffect()
     {
         print("Deadeffect invoked");
-        image.color = new Color(1, 1, 1, 1);
+        image.gameObject.SetActive(true);
         Invoke("hideDeadEffect", 1);
     }
 
     public void hideDeadEffect()
     {
-        print("Deadeffect invoked");
-        image.color = new Color(1, 1, 1, 0);
+        image.gameObject.SetActive(false);
     }
 }
