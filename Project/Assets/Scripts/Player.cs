@@ -15,10 +15,10 @@ public class Player : MonoBehaviour {
         collissionCheckVectorB = new Vector2(gameObject.transform.localScale.x / 2, -gameObject.transform.localScale.y / 2);
     }
 
-	void OnCollisionEnter2D (Collision2D c) {
+	/*void OnCollisionEnter2D (Collision2D c) {
         //Die();
         gameObject.transform.Translate(0, -8f * Time.deltaTime, 0);
-	}
+	}*/
 
     public void Die()
     {
