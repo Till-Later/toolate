@@ -8,6 +8,7 @@ public class Player : MonoBehaviour {
     public LoopArea loopArea;
     public float minDistanceToObstacleForward;
 	public Image image;
+    public Animator popup;
 
     private Vector2 collissionCheckVectorA, collissionCheckVectorB;
 
@@ -17,10 +18,21 @@ public class Player : MonoBehaviour {
         collissionCheckVectorB = new Vector2(gameObject.transform.localScale.x / 2, -gameObject.transform.localScale.y / 2);
     }
 
-	/*void OnCollisionEnter2D (Collision2D c) {
-        //Die();
-        gameObject.transform.Translate(0, -8f * Time.deltaTime, 0);
-	}*/
+	void OnCollisionEnter2D (Collision2D c) {
+        if(Time.time > lastTimeOut + 2) {
+            popup.SetTrigger("Play");
+            StartCoroutine(WallTimeOut());
+        }
+	}
+
+    float lastTimeOut;
+    IEnumerator WallTimeOut() {
+        lastTimeOut = Time.time;
+        GetComponent<PlayerController>().enabled = false;
+        yield return new WaitForSeconds(1);
+        GetComponent<PlayerController>().enabled = true;
+
+    }
 
     public void Die()
     {
