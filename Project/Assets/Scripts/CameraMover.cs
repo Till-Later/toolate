@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Camera : MonoBehaviour {
+public class CameraMover : MonoBehaviour {
+
+    public Player player;
 
 	// Use this for initialization
 	void Start () {
@@ -11,6 +13,6 @@ public class Camera : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+        gameObject.transform.localPosition = new Vector3(gameObject.transform.position.x, player.gameObject.transform.position.y, 0);
 	}
 }
