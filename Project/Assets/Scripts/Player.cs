@@ -40,6 +40,7 @@ public class Player : MonoBehaviour {
 
         //gameObject.transform.localPosition = proposedPosition;
 
+
         DeadEffect();
     }
 

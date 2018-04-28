@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class Goal : MonoBehaviour {
     [SerializeField]
-    SpriteRenderer sprite;
+	public LevelPopup popup;
+
+    [SerializeField] SpriteRenderer sprite;
 
     void Start () {
 
@@ -19,6 +21,7 @@ public class Goal : MonoBehaviour {
         spriteColor.a = 0.5f;
         sprite.color = spriteColor;
         Debug.Log("Great!");
+		popup.EndLevel();
     }
 
     void OnTriggerExit2D(Collider2D collider) {

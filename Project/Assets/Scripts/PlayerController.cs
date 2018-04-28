@@ -14,7 +14,7 @@ public class PlayerController : MonoBehaviour {
 	void FixedUpdate () {
         //Debug.Log(Input.GetAxis("Horizontal"));
         //transform.position += new Vector3(12 * Input.GetAxisRaw("Horizontal"), 6F) * Time.deltaTime;
-        rb.transform.Translate(new Vector3(12 * Input.GetAxisRaw("Horizontal"), 6F) * Time.deltaTime);
+		rb.transform.Translate(new Vector3(12 * Input.GetAxisRaw("Horizontal"), 6F) * Time.fixedDeltaTime);
 		/*
 		transform.position += new Vector3(0F, 6F) * Time.deltaTime;
 		if (Input.GetKey (KeyCode.LeftArrow)) {

@@ -11,6 +11,6 @@ public class LevelPopup : MonoBehaviour {
     }
 
     void Update() {
-        if(Input.GetKeyDown(KeyCode.Space)) { EndLevel(); }
+     //   if(Input.GetKeyDown(KeyCode.Space)) { EndLevel(); }
     }
 }
