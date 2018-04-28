@@ -2308,6 +2308,11 @@ Prefab:
       propertyPath: playerController
       value: 
       objectReference: {fileID: 127136207}
+    - target: {fileID: 114646654701528418, guid: 7df9a0109b00331498684c1c68ee3811,
+        type: 2}
+      propertyPath: m_Text
+      value: Level 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7df9a0109b00331498684c1c68ee3811, type: 2}
   m_IsPrefabParent: 0

@@ -7,6 +7,8 @@ public class LevelPopup : MonoBehaviour {
     public Animator animator;
 
     public void EndLevel() {
+        playerController.enabled = false;
+        playerController.GetComponent<Rigidbody2D>().simulated = false;
         animator.SetTrigger("End");
     }
 

@@ -22,11 +22,7 @@ public class Goal : MonoBehaviour {
         sprite.color = spriteColor;
         Debug.Log("Great!");
 		popup.EndLevel();
-    }
 
-    void OnTriggerExit2D(Collider2D collider) {
-        Color spriteColor = sprite.color;
-        spriteColor.a = 1f;
-        sprite.color = spriteColor;
+        transform.parent.GetComponentInChildren<GoalHighlighter>().enabled = false;
     }
 }
