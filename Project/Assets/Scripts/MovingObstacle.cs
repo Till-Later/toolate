@@ -19,12 +19,12 @@ public class MovingObstacle : MonoBehaviour {
 		if (positive) {
 			positionShift += speed;
 			transform.position += new Vector3 (speed,0F,0F) * Time.deltaTime;	
-			if (positionShift > maxPositionShift)
+			if (positionShift > 2*maxPositionShift)
 				positive = !positive;
 		} else {
 			positionShift -= speed;
 			transform.position -= new Vector3 (speed,0F,0F) * Time.deltaTime;	
-			if (positionShift < -maxPositionShift)
+			if (positionShift < 0)
 				positive = !positive;
 		}
 

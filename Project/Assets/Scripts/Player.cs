@@ -23,6 +23,7 @@ public class Player : MonoBehaviour {
     public void Die()
     {
         Debug.Log("Dead");
+		/*
         float respawnYPos;
         Collider2D[] colliders;
         Vector2 proposedPosition;
@@ -32,7 +33,9 @@ public class Player : MonoBehaviour {
             proposedPosition = new Vector2(0, respawnYPos);
             colliders = Physics2D.OverlapAreaAll(proposedPosition + collissionCheckVectorA, proposedPosition + collissionCheckVectorB);
         } while (colliders.Length > 0);
+*/
+		gameObject.transform.position = new Vector3 (0, 0, 0);//proposedPosition;
 
-        gameObject.transform.localPosition = proposedPosition;
+
     }
 }
